@@ -1,0 +1,21 @@
+TASK 12 – DAY-4 DESIGN CHALLENGE
+Decision: MODIFY the original design.
+
+A. Impact analysis
+The 50 AGVs introduce strict mobility and 10 ms command requirements. Their control traffic should use private 5G URLLC. The fixed wired backbone remains because eight lines already produce about 1.266 Gbps of traffic before AGV traffic.
+If an AGV command rate/size is not specified in the assignment, no invented AGV traffic figure should be added. The known Task-1 traffic remains 158.24 Mbps per line and 1,265.92 Mbps for eight lines.
+
+B. Test the original design
+Wi-Fi at 30 m AP spacing gives about 39 handovers over 1.2 km, with 5.85 s total stated handover interruption. This is incompatible with a 10 ms command deadline if every handover interrupts control.
+Private 5G at 300 m coverage gives about 3 handovers and 60 ms total interruption over the route. It is substantially better, but the 20 ms handover figure is still above a single 10 ms command deadline, so the design must use URLLC, buffering/duplication and careful radio engineering rather than assuming zero interruption.
+
+C. Revised design
+- Private 5G URLLC for 50 AGVs and mobile robot control.
+- Wi-Fi 6 for office users and non-critical mobile devices.
+- Fibre backbone between plant core, shop-floor switches and data centre.
+- Cat6A S/FTP for fixed robot cells and noisy areas.
+- Wired CCTV where practical; 5G/eMBB only for selected mobile/high-value video.
+- Use FEC/robust wireless reliability mechanisms for critical control; use TCP/ARQ for ordinary IP applications.
+
+D. Defence
+The modification is justified by the numbers: 5.85 s of Wi-Fi handover interruption versus 60 ms for 5G over the 1.2 km route, and 1,265.92 Mbps aggregate traffic for eight lines. The remaining risk is that even a 20 ms 5G handover exceeds a 10 ms command deadline, so redundancy, radio planning and application-level fail-safe behaviour are essential.
