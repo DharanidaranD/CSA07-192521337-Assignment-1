@@ -1,0 +1,7 @@
+TASK 7 ANSWER
+Data = 1101011011, generator = 1011.
+CRC remainder = 100, so transmitted frame = 1101011011100.
+The supplied received frame 1101011011101 has remainder 001, so it is rejected.
+A degree-3 CRC generator detects every burst error of length ≤3. Longer bursts are not guaranteed to be detected. An undetected pattern is any nonzero error polynomial divisible by the generator; the program searches for one.
+For 2-D parity, a rectangular set of four flipped bits at the corners of a rectangle can preserve every affected row and column parity, so it can be missed.
+Internet checksum: sum = 0x8573; one's complement = 0x7A8C.

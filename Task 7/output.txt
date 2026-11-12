@@ -1,0 +1,5 @@
+transmitted: 1101011011100
+no error   : True
+1-bit error: False
+3-bit burst: False
+undetected error pattern: 1011
