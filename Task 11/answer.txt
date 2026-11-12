@@ -1,0 +1,20 @@
+TASK 11 – FINAL PLANT NETWORK DESIGN
+Recommendation: fibre backbone + shielded copper at robot cells + Wi-Fi 6 for office/general mobility + private 5G URLLC for future AGVs/critical mobility.
+
+Media:
+- Robot cell near welders: Cat6A S/FTP for noise immunity and 100 m Ethernet reach.
+- 140 m office/shop-floor and 550 m shop-floor/data-centre runs: fibre.
+- 400 km head-office path: carrier/leased single-mode fibre service.
+Wireless:
+- Office/user devices: Wi-Fi 6.
+- AGVs/strict mobile control: private 5G URLLC.
+- High-rate CCTV: wired Ethernet/fibre/eMBB where mobility is required.
+Error/flow control:
+- Ethernet CRC for link errors.
+- TCP/ARQ for ordinary IP traffic.
+- FEC is preferred for latency-sensitive noisy wireless links.
+- Sliding-window protocols are needed on the 400 km path; stop-and-wait gives only about 0.299% utilisation on the 1 Gbps, 1500-byte frame example.
+Key numbers from earlier tasks: one line is 158.24 Mbps; eight lines are 1265.92 Mbps, so a single 1 Gbps uplink is insufficient. Local CCTV recording reduces a line to 67.04 Mbps, making 1 Gbps sufficient for one line but not necessarily the eight-line plant aggregate.
+Risks: RF interference/roaming variability for wireless control, and WAN latency/capacity dependence on the carrier.
+Five-plant scale: use redundant fibre/core switching and adequate inter-plant WAN capacity; do not aggregate five plants onto an undersized 1 Gbps link.
+Alternative all-private-5G design: use 5G for AGVs, mobile control and selected cameras; keep fixed high-volume CCTV/backbone traffic on wired fibre/copper for predictable capacity and latency.
