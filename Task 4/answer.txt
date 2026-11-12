@@ -1,0 +1,8 @@
+TASK 4 ANSWER
+(a) Robot cell, 85 m near welders: Cat6A S/FTP — shielding and 100 m Ethernet limit.
+(b) Office to shop floor, 140 m: fibre is preferred because it exceeds the 100 m copper channel limit; use multimode fibre for a campus/plant run.
+(c) Shop floor to data centre, 550 m: multimode fibre.
+(d) Plant to head office, 400 km: single-mode fibre via leased/carrier service; ordinary copper Ethernet cannot span 400 km.
+Shannon at 40 dB SNR: 3321.96 Mbps. At 15 dB: 1256.95 Mbps. Lower SNR reduces theoretical capacity significantly and indicates a noisier robot environment.
+Wi-Fi 6 at 160 MHz and 15 dB: 804.45 Mbps theoretical Shannon limit; wireless still has variable interference, contention, jitter and handover risk, so it is not preferred for 10 ms robot control.
+Measured throughput is below Shannon because Shannon is an ideal upper bound; protocol overhead, coding, implementation limits, interference and contention reduce practical throughput.

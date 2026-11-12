@@ -1,0 +1,7 @@
+Telephone line   Shannon limit       0.03 Mbps
+Cat6 pair        Shannon limit    3321.96 Mbps
+Wi-Fi 6 channel  Shannon limit    1329.50 Mbps
+Nyquist, 3,100 Hz with 4 levels: 12.4 kbps
+Cat6 at 15 dB SNR: 1256.95 Mbps
+Wi-Fi 6 at 15 dB SNR: 804.45 Mbps
+SNR required for 56 kbps on 3100 Hz: 54.38 dB
