@@ -1,0 +1,8 @@
+TASK 5 ANSWER
+Route = 1,200 m.
+Wi-Fi: 40 coverage intervals, giving about 39 handovers; unavailable time = 39×150 ms = 5.85 s.
+Private 5G: 4 coverage intervals, giving about 3 handovers; unavailable time = 3×20 ms = 60 ms.
+Service mapping: AGVs/robot control → URLLC; CCTV → eMBB; many low-rate sensors → mMTC.
+Bluetooth: short-range personal/peripheral devices. Zigbee: low-power local sensor/automation networks. LoRaWAN: sparse, low-rate long-range battery sensors.
+802.11r can reduce Wi-Fi roaming time, but contention, RF interference, retransmissions and jitter remain risky for a 10 ms control deadline.
+LoRa alternative: 600×50 bytes/s×8 = 240 kbps, far above a 5 kbps gateway, so all 600 sensors do not fit. Only a much smaller subset of very low-rate sensors should use one LoRa gateway; critical/high-rate sensors should remain on the plant network.
