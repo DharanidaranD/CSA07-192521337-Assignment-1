@@ -1,0 +1,10 @@
+Linux:
+sudo ethtool -s eth0 speed 100 duplex full autoneg on
+Verify:
+ethtool eth0
+
+Preferred: enable auto-negotiation at both ends. If forced, configure both ends identically.
+
+Windows PowerShell (example; adapter name may differ):
+Get-NetAdapter
+Set-NetAdapterAdvancedProperty -Name "Ethernet" -DisplayName "Speed & Duplex" -DisplayValue "Auto Negotiation"
