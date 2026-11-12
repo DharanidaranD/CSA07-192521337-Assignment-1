@@ -1,0 +1,5 @@
+TASK 8 ANSWER
+For m=16, 2^r ≥ 16+r+1 gives r=5. Total codeword = 21 bits; check-bit overhead = 5/21×100 = 23.81%.
+Code {00000,01011,10101,11110} has minimum Hamming distance 3. It detects up to 2-bit errors and corrects 1-bit errors.
+0110011 arriving as 0110111 has an error at position 5; syndrome = 5, so the corrected data is 1011.
+For a 1/1000 BER, the probability of at least one bit error in a 16-bit word is about 1-(0.999)^16 ≈ 1.59%. Hamming sends 21 bits every time and corrects a single error without retransmission delay. ARQ sends 16 bits when clean but can incur the 40 ms retransmission delay when an error occurs. For real-time sensor/control traffic on a noisy link, FEC is attractive; ARQ is useful when delay tolerance is higher.

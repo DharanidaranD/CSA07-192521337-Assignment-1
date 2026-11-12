@@ -1,0 +1,4 @@
+codeword       : 0110011
+error at None: syndrome 0, data 1011
+error at 5   : syndrome 5, data 1011
+two-bit flip: syndrome 7 data 1110
