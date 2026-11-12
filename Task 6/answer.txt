@@ -1,0 +1,8 @@
+TASK 6 ANSWER
+Late collision: a collision detected after the normal collision window, usually associated with a duplex/configuration problem or physical fault.
+CRC error: received frame failed the frame-check sequence, indicating corruption in transit.
+The combination of half duplex, auto-negotiation off, late collisions and CRC errors strongly suggests a duplex mismatch or physical-layer problem. With a gigabit switch port left on auto, the PC should normally use auto-negotiation too.
+MAC 01:00:5e:0a:01:02 is a multicast/group MAC (IPv4 multicast range begins 01:00:5e), not a single unicast device.
+The first three bytes 3c:52:82 are the OUI, identifying the vendor/manufacturer allocation.
+Jumbo frames can reduce per-byte/frame overhead for CCTV storage, but every device/interface and intermediate switch path must support the same MTU (around 9000 bytes); otherwise fragmentation/drops can occur.
+Ring vs star: a protected industrial ring can recover from one cable cut without isolating all downstream devices if the ring protocol reconverges; recovery depends on the protocol. A star loses only the devices behind the failed individual link, while the rest remains connected. A single central switch failure can affect the whole star.
