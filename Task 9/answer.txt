@@ -1,0 +1,9 @@
+TASK 9 ANSWER
+Frame = 1500 bytes = 12,000 bits. At 1 Gbps, transmission time = 12 μs.
+400 km propagation at 2×10^8 m/s = 2 ms. a = 2 ms / 12 μs = 166.67.
+Stop-and-wait utilisation = 1/(1+2a) ≈ 0.299%, giving about 2.99 Mbps.
+Smallest full-utilisation window = ceil(1+2a) = 335 frames.
+For Go-Back-N, sequence space must support W+1 values → 9 bits. For Selective Repeat, at least 2W values → 10 bits.
+Selective Repeat retransmits only the missing frame, so it wastes fewer frames; it needs receiver buffering and per-frame state.
+HDLC/PPP use a flag pattern (01111110 / 0x7E) to mark frame boundaries.
+Satellite: a=150, full-utilisation window = 301. With W=64, utilisation = 21.26%, throughput ≈ 2.126 Mbps and receiver buffer ≈ 64×1500 = 96,000 bytes (about 96 KB).
