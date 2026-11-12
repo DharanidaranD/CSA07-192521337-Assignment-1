@@ -1,0 +1,8 @@
+TASK 10 ANSWER
+400 km fibre propagation delay = 400,000/(2×10^8) = 0.002 s = 2 ms one way.
+The measured traceroute values include router processing, queuing, access links and return-path effects, so propagation is only part of the total.
+Hop 3's single 38.2 ms response is an outlier; it can be caused by temporary queueing or ICMP rate limiting and does not prove forwarding traffic is delayed by 38.2 ms.
+Hop 5's stars mean no response was returned for those probes, often due to filtering/rate limiting; later hop 6 responds, so it is not automatically a path failure.
+Hop 4 has the highest consistently elevated RTT among responding hops.
+For final submission, add a real traceroute, ping and Wireshark capture. In Wireshark, identify Ethernet (L2), IPv4 (L3), and ICMP/TCP (L4) headers.
+Continuous SNMP counters/flow records provide ongoing interface errors, utilisation and flow visibility; ping/traceroute provide periodic path/latency snapshots.
