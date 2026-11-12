@@ -1,0 +1,10 @@
+REAL CAPTURE REQUIRED
+The assignment explicitly requires the student's own traceroute output. This file contains the supplied assignment trace for analysis only:
+1   10.10.1.1        0.6 ms    0.5 ms  0.6 ms
+2   100.64.0.1       3.1 ms    2.9 ms  3.4 ms
+3   172.31.4.9       4.0 ms   38.2 ms  4.2 ms
+4   103.21.8.17     11.8 ms   11.5 ms 12.1 ms
+5   * * *
+6   10.200.0.10     12.6 ms   12.4 ms 12.9 ms
+
+Before submission, replace this file with your own command output.

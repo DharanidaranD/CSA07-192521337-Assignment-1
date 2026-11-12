@@ -1,0 +1,2 @@
+REAL PING REQUIRED
+Replace this file with the actual output of a real ping to the selected destination before submission.
