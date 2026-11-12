@@ -1,0 +1,18 @@
+
+MESSAGE LENGTH: 12
+Application  adds HTTP -> 19 bytes
+Transport    adds TCP -> 25 bytes
+Network      adds IP  -> 30 bytes
+Data link    adds ETH -> 40 bytes
+on the wire: [ETH|[IP|[TCP|[HTTP|GET /results]]]|FCS]
+delivered length: 12
+overhead: 28 bytes; percentage: 70.00%
+
+MESSAGE LENGTH: 1400
+Application  adds HTTP -> 1407 bytes
+Transport    adds TCP -> 1413 bytes
+Network      adds IP  -> 1418 bytes
+Data link    adds ETH -> 1428 bytes
+on the wire: [ETH|[IP|[TCP|[HTTP|AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...AAAAAAAAAAAA]]]|FCS]
+delivered length: 1400
+overhead: 28 bytes; percentage: 1.96%
