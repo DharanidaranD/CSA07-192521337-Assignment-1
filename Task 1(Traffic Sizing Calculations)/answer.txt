@@ -1,0 +1,9 @@
+TASK 1 OUTPUT
+Robot controllers: 32.00 Mbps
+Vibration sensors: 0.24 Mbps
+CCTV: 96.00 Mbps
+Office peak: 30.00 Mbps
+Total per line: 158.24 Mbps
+8 lines: 1265.92 Mbps
+CCTV at 5%: 67.04 Mbps
+8 lines with 5% CCTV: 536.32 Mbps
