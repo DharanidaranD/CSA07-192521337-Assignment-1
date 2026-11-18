@@ -2,11 +2,11 @@
 **Title:** Make the Data of a Smart Manufacturing Plant Arrive Correctly and On Time
 * **Name:** DHARANIDARAN D
 * **Register Number:** 192521337
-* **Operating System:** [WiWindows1 / Ubuntu 22.04]
+* **Operating System:** [Windows1 / Ubuntu 22.04]
 * **Python Version:** [Run 3.11]
 * **Packet Tracer Version:8.2.1
 ### Repositstructureture
-- `README.md` – repository information and run/open instructions
+- `README.md` – repository Version and run/open instructions
 - `REPORT/` – assignment report DOCX
 - `Task01/` … `Task12/` – calculations, programs, configurations and evidence folders
 - `Task03/complete_code.py` – completed encapsulation program
