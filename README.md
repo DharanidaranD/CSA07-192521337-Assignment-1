@@ -1,10 +1,10 @@
-# CSA07-<RegisterNumber>-Assignment1
-
-## Computer Networks – Assignment 1
+# CSA07 – Computer Networks: Assignment 1 (CO3)
 **Title:** Make the Data of a Smart Manufacturing Plant Arrive Correctly and On Time
-
-
-
+* **Name:** DHARANIDARAN D
+* **Register Number:** 192521337
+* **Operating System:** [WiWindows1 / Ubuntu 22.04]
+* **Python Version:** [Run 3.11]
+* **Packet Tracer Version:8.2.1
 ### Repositstructureture
 - `README.md` – repository information and run/open instructions
 - `REPORT/` – assignment report DOCX
