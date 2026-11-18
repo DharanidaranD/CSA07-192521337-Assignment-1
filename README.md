@@ -3,9 +3,9 @@
 ## Computer Networks – Assignment 1
 **Title:** Make the Data of a Smart Manufacturing Plant Arrive Correctly and On Time
 
-> Replace `<RegisterNumber>` and the placeholders for name, OS, Python version and Packet Tracer version before submission.
 
-### Repository structure
+
+### Repositstructureture
 - `README.md` – repository information and run/open instructions
 - `REPORT/` – assignment report DOCX
 - `Task01/` … `Task12/` – calculations, programs, configurations and evidence folders
