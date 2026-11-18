@@ -1,4 +1,4 @@
-# CSA07 – Computer Networks: Assignment 1 (CO3)
+# CSA07 – Computer Networks: Assignment 1 (CO1)
 **Title:** Make the Data of a Smart Manufacturing Plant Arrive Correctly and On Time
 * **Name:** DHARANIDARAN D
 * **Register Number:** 192521337
